@@ -12,12 +12,20 @@ const products = [
 ];
 
 const ProductList = () => {
+  
+  const ProductClick = (product) => {
+    alert(`Tên sản phẩm: ${product.name}\nGiá: ${product.price}`);
+  };
+
   return (
     <div>
-      
       <div className="product-list">
         {products.map(product => (
-          <div className="product-card" key={product.id}>
+          <div 
+            className="product-card" 
+            key={product.id} 
+            onClick={() => ProductClick(product)} 
+          >
             <img src={product.image} alt={product.name} />
             <h2>{product.name}</h2>
             <p>{product.price}</p>
@@ -33,9 +41,8 @@ const ProductList = () => {
         <button>4</button>
         <button>&gt;</button>
       </div>
-      </div>
+    </div>
   );
 };
-
 
 export default ProductList;

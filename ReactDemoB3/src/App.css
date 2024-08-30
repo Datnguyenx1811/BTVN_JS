@@ -1,4 +1,15 @@
-/* Yêu thích ngay */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  width: Fixed (1, 106px) px;
+  height: Fixed (1, 547px) px;
+  top: -982px;
+  left: 1027px;
+  padding: 67px 130px 67px 130px;
+  gap: 75px;
+  opacity: 0px;
+}
 #a{
 width: 633px;
 height: 47px;
@@ -244,6 +255,7 @@ flex-grow: 0;
   text-align: left;
   position: relative;
   transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .product-card:hover {
@@ -302,4 +314,7 @@ flex-grow: 0;
 
 .pagination button:hover {
   background-color: #f0f0f0;
+}
+.product-card:hover {
+  transform: scale(1.05); 
 }
